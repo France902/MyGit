@@ -52,6 +52,8 @@
 | 🎮 **Geometry Dash Clone** | Rhythm platformer clone with custom levels, physics & gravity portals | Java · Swing |
 | 📚 **Idle School** | Browser idle game — personal passion project, still evolving | HTML · CSS · JS |
 | 🕹️ **Unity Project** *(WIP)* | Game in development using Unity and C# | Unity · C# |
+| 🕹️ **Poker** | Web game that replicates a poker match versus an AI  | HTML · Javascript |
+| 🕹️ **IP Calculator** | Tool developed in Java that calculates An IP address/CIDR | Java · Networking |
 
 ---
 
