@@ -113,7 +113,7 @@
 
     .hero-avatar { opacity: 0; animation: fadeIn 0.8s ease 0.5s forwards; }
     .avatar-ring {
-      width: 260px; height: 260px; border-radius: 50%;
+      width: 480px; height: 480px; border-radius: 50%;
       border: 1px solid var(--border);
       display: flex; align-items: center; justify-content: center;
       margin: 0 auto;
@@ -241,6 +241,9 @@
     @keyframes fadeIn {
       from { opacity: 0; } to { opacity: 1; }
     }
+    @keyframes fadeImageOut {
+      from { opacity: 1; } to { opacity: 0; }
+    }
 
     /* MOBILE */
     @media (max-width: 768px) {
@@ -283,8 +286,7 @@
     </div>
     <div class="hero-avatar">
       <div class="avatar-ring">
-        <!-- Replace this div with: <img src="assets/photo.jpg" alt="France" style="width:100%;height:100%;object-fit:cover"> -->
-        <div class="avatar-placeholder">F</div>
+        <img src="photos/in piedi tutto corpo.jpg" alt="France" id="photoImage" style="width:100%;height:100%; object-fit:cover">
       </div>
     </div>
   </div>
@@ -503,6 +505,33 @@
 <footer>
   <span>France902</span> · Built with HTML, CSS &amp; stubbornness · 2025
 </footer>
+
+<script>
+  const avatarRing = document.querySelector(".avatar-ring");
+  const photoImage = document.getElementById("photoImage");
+
+  function animationPhoto() {
+    let arrayPhoto = ["photos/in piedi tutto corpo.jpg", "photos/accovacciato tutto corpo.jpg", "photos/accovacciato mezzo busto.jpg"];
+    let currentIndex = 0;
+
+    const intervalloId = setInterval(() => {
+      avatarRing.style.animation = "fadeImageOut 1s ease-in-out forwards";
+
+      setTimeout(() => {
+        currentIndex++;
+        photoImage.src = arrayPhoto[currentIndex];
+        if(currentIndex == 2) currentIndex = -1;
+
+        avatarRing.style.animation = "fadeIn 1s ease-in-out forwards";
+      }, 1000);
+      
+    }, 3500);
+  }
+
+  animationPhoto();
+
+
+</script>
 
 </body>
 </html>
