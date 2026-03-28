@@ -521,7 +521,9 @@
         currentIndex++;
         photoImage.src = arrayPhoto[currentIndex];
         if(currentIndex == 2) currentIndex = -1;
+      }, 900);
 
+      setTimeout(() => {
         avatarRing.style.animation = "fadeIn 1s ease-in-out forwards";
       }, 1000);
       
