@@ -8,7 +8,7 @@
 *I build games, web apps, and whatever else keeps me up at night.*
 
 [![Email](https://img.shields.io/badge/Email-frascic231%40gmail.com-5eead4?style=flat-square&logo=gmail&logoColor=white)](mailto:frascic231@gmail.com)
-[![Portfolio](https://img.shields.io/badge/Portfolio-france902.github.io-818cf8?style=flat-square&logo=github&logoColor=white)](https://france902.github.io)
+[![Portfolio](https://img.shields.io/badge/Portfolio-france902.github.io-818cf8?style=flat-square&logo=github&logoColor=white)](https://france902.github.io/MyGit/)
 
 </div>
 
